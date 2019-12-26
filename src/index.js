@@ -1,7 +1,7 @@
-import VueCropper from './vue-cropper'
+import Avator from './Avator'
 
 const install = function(Vue) {
-  Vue.component('VueCropper', VueCropper);
+  Vue.component('Avator', Avator);
 }
 
 /* istanbul ignore if */
@@ -9,11 +9,10 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-export { VueCropper }
+export { Avator }
 
 export default {
-  version: '0.4.9',
   install,
-  VueCropper,
-  vueCropper: VueCropper
+  Avator,
+  Avator: Avator
 }

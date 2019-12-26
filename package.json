@@ -1,7 +1,7 @@
 {
-  "name": "vue-cropper",
-  "version": "0.4.9",
-  "description": "A simple Vue picture clipping plugin",
+  "name": "h5-vue-croppers",
+  "version": "1.0.2",
+  "description": "vue移动端头像裁剪插件",
   "keywords": [
     "vue",
     "cropper",
@@ -10,22 +10,12 @@
     "vue-cropper-component"
   ],
   "main": "./dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xyxiao001/vue-cropper.git"
-  },
   "author": "goodboy",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xyxiao001/vue-cropper/issues"
-  },
-  "homepage": "https://github.com/xyxiao001/vue-cropper#readme",
   "scripts": {
-    "build": "rm -rf ./dist && webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js"
   },
   "devDependencies": {
-    "vue-loader": "^15.4.2",
-    "webpack-cli": "^3.1.2",
     "@babel/core": "^7.1.2",
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
@@ -33,14 +23,21 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-runtime": "^6.26.0",
     "css-loader": "^1.0.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
     "style-loader": "^0.23.1",
     "vue": "^2.5.17",
+    "vue-loader": "^15.4.2",
     "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.20.2"
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "browserify": {
     "transform": [
       "vueify"
     ]
+  },
+  "dependencies": {
+    "vue-cropper": "^0.4.9"
   }
 }
