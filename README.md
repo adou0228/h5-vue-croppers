@@ -1,6 +1,6 @@
 ```
 组件内使用
-import { Avator } from 'h5-vue-cropper/src/index' 
+import { Avator } from 'h5-vue-croppers' 
 components: {
   Avator,
 },
@@ -29,8 +29,11 @@ components: {
     </template>
 
     <script>
-
+    import { Avator } from 'h5-vue-croppers' 
     export default {
+    components: {
+     Avator,
+    },
     data() {
         return {
         imageUrl: '',
