@@ -1,6 +1,6 @@
 {
   "name": "h5-vue-croppers",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "vue手机端头像裁剪",
   "main": "dist/avator.min.js",
   "scripts": {
@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "npm-user-downloads": "^1.2.0",
     "vue-cropper": "^0.4.9",
     "webpack-cli": "^3.3.10"
   }

@@ -78,6 +78,12 @@ components: {
         <td>url 地址 || base64 || blob</td>
     </tr>
     <tr>
+        <td>name</td>
+        <td>input返回的file对象里的name</td>
+        <td>空</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>outputSize</td>
         <td>裁剪生成图片的质量</td>
         <td>1</td>
@@ -110,13 +116,13 @@ components: {
     <tr>
         <td>autoCropWidth</td>
         <td>默认生成截图框宽度</td>
-        <td>容器的80%</td>
+        <td>200px</td>
         <td>0~max</td>
     </tr>
     <tr>
         <td>autoCropHeight</td>
         <td>默认生成截图框高度</td>
-        <td>容器的80%</td>
+        <td>200px</td>
         <td>0~max</td>
     </tr>
     <tr>
@@ -189,7 +195,7 @@ components: {
         <td>enlarge</td>
         <td>图片根据截图框输出比例倍数</td>
         <td>1</td>
-        <td>0-max(建议不要太大不然会卡死的呢)</td>
+        <td>0-max(建议不要太大)</td>
     </tr>
     <tr>
         <td>mode</td>
@@ -199,4 +205,8 @@ components: {
     </tr>
   </tbody>
 </table>
+
+
+#1.0.5
+  文档维护
 
