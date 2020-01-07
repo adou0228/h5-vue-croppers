@@ -1,6 +1,6 @@
 ```
 组件内使用
-import { Avator } from 'h5-vue-croppers' 
+import  Avator  from 'h5-vue-croppers' 
 components: {
   Avator,
 },
