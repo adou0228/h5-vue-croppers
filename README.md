@@ -1,34 +1,39 @@
+**效果**
+![](https://raw.githubusercontent.com/lichuntao1996/markdown_imgs/master/1.jpg)
+
+**组件内使用**
+
 ```
-组件内使用
+npm install h5-vue-croppers 
+
 import  Avator  from 'h5-vue-croppers' 
 components: {
   Avator,
-},
-
-
-
+}
 ```
 
-```使用示例
-    <template>
+**使用示例**
+
+```
+<template>
     <div>
         <input
             type="file"
             @change="avatorChange"
         >
-    <Avator
-        v-if="state"
-        :url="imageUrl"
-        :name="fileName"
-        :autoCrop="true"
-        :centerBox="true"
-        @cancel="cancelAvatorChoose"
-        @upload="getCropData"
-        />
+        <Avator
+            v-if="state"
+            :url="imageUrl"
+            :name="fileName"
+            :autoCrop="true"
+            :centerBox="true"
+            @cancel="cancelAvatorChoose"
+            @upload="getCropData"
+            />
     </div>
-    </template>
+</template>
 
-    <script>
+<script>
     import { Avator } from 'h5-vue-croppers' 
     export default {
     components: {
@@ -46,20 +51,21 @@ components: {
             console.log(files)//裁剪之后返回的文件流，用于上传服务器
         },
         avatorChange(e) {
-        const file = e.srcElement.files[0]
-        const imgURL = window.URL.createObjectURL(file)
-        this.imageUrl = imgURL
-        this.fileName = file.name
-        this.state = true
+            const file = e.srcElement.files[0]
+            const imgURL = window.URL.createObjectURL(file)//处理input返回的file对象，得到一个图片的url传给裁剪组件
+            this.imageUrl = imgURL
+            this.fileName = file.name
+            this.state = true
         },
         cancelAvatorChoose() {
-        this.imageUrl = ''
-        this.state = false
+            this.imageUrl = ''
+            this.state = false
         },
     }
-    }
-    </script>
+}
+</script>
 ```
+**文档**
 
 <table style="text-align: center">
   <thead>
@@ -206,7 +212,11 @@ components: {
   </tbody>
 </table>
 
+日志
 
+#1.0.6
+  测试
+  
 #1.0.5
   文档维护
 
