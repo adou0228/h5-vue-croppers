@@ -44,7 +44,7 @@
     "webpack-dev-server": "^2.9.5"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "npm-user-downloads": "^1.2.0",
     "vue-cropper": "^0.4.9",
     "webpack-cli": "^3.3.10"
